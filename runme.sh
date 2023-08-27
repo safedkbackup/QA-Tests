@@ -5,7 +5,7 @@ me=$(basename "$0")
 if [[ ! -f "$QA_SCRIPT_SETTINGS" ]]; then
 	echo "Unable to process script: error processing script properly ($me:$LINENO)"
 	echo -e "Caused by:\n\tSettings file was not found -- aborting script ($me:$LINENO)"
-	echo -e "\t'QA_SCRIPT_SETTINGS' undefined ($me:$LINENO)"
+	echo -e "\t'QA_SCRIPT_SETTINGS' environment variable undefined ($me:$LINENO)"
 	exit -1
 fi
 
